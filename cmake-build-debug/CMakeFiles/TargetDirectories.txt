@@ -1,0 +1,3 @@
+/Users/semre57/Documents/GitHub/is-palindrome/cmake-build-debug/CMakeFiles/is_palindrome.dir
+/Users/semre57/Documents/GitHub/is-palindrome/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/semre57/Documents/GitHub/is-palindrome/cmake-build-debug/CMakeFiles/rebuild_cache.dir
