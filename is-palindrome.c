@@ -3,21 +3,18 @@
 //
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 #define SIZE 100
-
-void sgets(char *p) {
-    int c;
-    while ((c = getchar()) != '\n')
-        *p++ = c;
-    *p = '\0';
-}
 
 int main()
 {
     char str [SIZE];
     printf("Enter a string: ");
-    sgets(str);
+    if (fgets(str, SIZE, stdin) != NULL) {
+        // fgets, satır sonu karakterini (\n) de alır, bunu kaldırmak isterseniz:
+        str[strcspn(str, "\n")] = '\0';  // Satır sonu karakterini null ile değiştiriyoruz
+    }
 
     int len;
     for(len = 0; str[len]; len++) // str[len] means => (str[len] != '\0') also ('\0')'s ASCII is 0.
